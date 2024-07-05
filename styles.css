@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photo-gallery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    max-width: 300px; /* 最大宽度 */
+    max-height: 300px; /* 最大高度 */
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.content h1, .content p {
+    margin: 0;
+    font-family: 'KaiTi', '楷体', 'STKaiti', '华文楷体', serif; /* 设置字体为楷体 */
+}
+
+.art-text {
+    margin-top: 20px;
+    font-family: 'KaiTi', '楷体', 'STKaiti', '华文楷体', serif; /* 设置字体为楷体 */
+    font-size: 2em;
+    color: #ffcc00; /* 金色 */
+    text-shadow: 2px 2px 4px #000; /* 黑色阴影 */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
